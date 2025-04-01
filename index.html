@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <title>Portifólio Davittiw</title>
+    <title>Luccas Davi Portifólio</title>
   </head>
   <body>
     <!--Barra de navegação-->
     <nav>
-
+      <ul>
+        <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="#projetos"><i class="fa-regular fa-folder"></i></a></li>
+        <li><a href="#skills"><i class="fa-solid fa-wrench"></i></a></li>
+        <li><a href="#duvidas"><i class="fa-solid fa-comment"></i></a></li>
+      </ul>
     </nav>
 
     <!--Conteúdo principal-->
@@ -83,36 +88,132 @@
 
         <!--Tela de tecnologias-->
         <section id="skills">
+          <!--Texto Principal-->
           <div class="texto-pj">
             <h1>Conhecimento nas melhores tecnologias para <span>resultados excepcionais</span></h1>
           </div>
 
-          <!--Card descrição da tecnologia-->
+          <!--Card do grupo da tecnologia-->
           <div class="card-skills">
+
+            <!--Card descrição da tecnologia-->
             <div class="info-skills">
-              <p>Nome</p>
-              <p>Onde</p>
+                <i class="fa-brands fa-html5"></i>
+
+              <div class="text-skills">
+                <p id="nome-projeto">HTML5</p>
+                <p>Front-end</p>
+              </div>
+
             </div>
 
             <!--Card descrição da tecnologia-->
             <div class="info-skills">
-              <p>Nome</p>
-              <p>Onde</p>
+                <i class="fa-brands fa-css3-alt"></i>
+
+              <div class="text-skills">
+                <p id="nome-projeto">CSS3</p>
+                <p>Front-end</p>
+              </div>
+
             </div>
 
             <!--Card descrição da tecnologia-->
             <div class="info-skills">
-              <p>Nome</p>
-              <p>Onde</p>
+                <i class="fa-brands fa-js"></i>
+
+              <div class="text-skills">
+                <p id="nome-projeto">JavaScript</p>
+                <p>Front-end</p>
+              </div>
+
             </div>
 
             <!--Card descrição da tecnologia-->
             <div class="info-skills">
-              <p>Nome</p>
-              <p>Onde</p>
+              <i class="fa-brands fa-python"></i>
+
+                <div class="text-skills">
+                  <p id="nome-projeto">Python</p>
+                  <p>Back-end</p>
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="card-skills">
+
+            <!--Card descrição da tecnologia-->
+            <div class="info-skills">
+              <i class="fa-brands fa-java"></i>
+
+              <div class="text-skills">
+                <p id="nome-projeto">Java</p>
+                <p>Back-end</p>
+              </div>
+
             </div>
 
             <!--Card descrição da tecnologia-->
+            <div class="info-skills">
+              <i class="fa-brands fa-php"></i>
+
+              <div class="text-skills">
+                <p id="nome-projeto">PHP</p>
+                <p>Back-end</p>
+              </div>
+
+            </div>
+
+            <!--Card descrição da tecnologia-->
+            <div class="info-skills">
+              <i class="fa-solid fa-database"></i>
+
+              <div class="text-skills">
+                <p id="nome-projeto">MySQL</p>
+                <p>Banco de Dados</p>
+              </div>
+
+            </div>
+
+            <!--Card descrição da tecnologia-->
+            <div class="info-skills">
+              <i class="fa-brands fa-github"></i>
+
+                <div class="text-skills">
+                  <p id="nome-projeto">GitHub</p>
+                  <p>Controle versão</p>
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="card-skills">
+
+            <!--Card descrição da tecnologia-->
+            <div class="info-skills">
+              <i class="fa-brands fa-git"></i>
+
+              <div class="text-skills">
+                <p id="nome-projeto">Git</p>
+                <p>Controle versão</p>
+              </div>
+
+            </div>
+
+            <!--Card descrição da tecnologia-->
+            <div class="info-skills">
+              <i class="fa-brands fa-figma"></i>
+
+              <div class="text-skills">
+                <p id="nome-projeto">Figma</p>
+                <p>Design</p>
+              </div>
+
+            </div>
+
           </div>
         </section>
 
@@ -123,7 +224,7 @@
           <div class="left">
 
             <div class="texto-pj">
-              <h1>Dúvidas?</h1>
+              <h1><span>Dúvidas</span>?</h1>
             </div>
 
             <!--FAQ-->
@@ -132,7 +233,7 @@
 
                     <li>
                         <input type="radio" name="acordeon" id="primeiro">
-                        <label for="primeiro">Quais são suas habilidades interpessoais?</label>
+                        <label for="primeiro">Quais são suas habilidades <span>interpessoais?</span></label>
 
                         <div class="resposta">
                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, reiciendis.</p>
@@ -141,7 +242,7 @@
 
                     <li>
                       <input type="radio" name="acordeon" id="segundo">
-                      <label for="segundo">Qual seu nível de inglês?</label>
+                      <label for="segundo">Qual seu nível de <span> inglês?</span></label>
                       
                       <div class="resposta">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, reiciendis.</p>
@@ -150,12 +251,21 @@
 
                   <li>
                     <input type="radio" name="acordeon" id="terceiro">
-                    <label for="terceiro">Como você lida com cronograma de projetos?</label>
+                    <label for="terceiro">Como você lida com <span>cronograma de projetos</span>?</label>
                     
                     <div class="resposta">
                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, reiciendis.</p>
                     </div>
                 </li>
+
+                <li>
+                  <input type="radio" name="acordeon" id="quarto">
+                  <label for="quarto">Você tem experiência suficiente para a vaga, mesmo sendo júnior?</label>
+                  
+                  <div class="resposta">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, reiciendis.</p>
+                  </div>
+              </li>
 
                 </ul>
             </div>
@@ -163,7 +273,21 @@
 
           <!--Lado direito da página-->
           <div class="right">
-            <h2>Entre em contato!</h2>
+            <h2>Entre em <span>contato</span>!</h2>
+
+            <div class="formulario">
+              <form action="" method="post"></form>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="seu nome">
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+
+                <label for="msg">Mensagem: </label>
+                <textarea name="msg" id="msg" placeholder="Sua mensagem"></textarea>
+
+                <button id="envio" type="submit">Enviar</button>
+            </div>
           </div>
 
         </section>
@@ -171,7 +295,9 @@
 
     <!--Rodapé-->
     <footer>
-        <h3>desenvolvido por @davittiw</h3>
+        <h3>Desenvolvido por @davittiw</h3>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

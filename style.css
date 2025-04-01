@@ -2,15 +2,57 @@
 
 * {
     font: normal 20pt 'Poppins';
+    box-sizing: border-box;
 }
 
 body {
     background-color: #141314;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 main {
     width: 100vw;
     min-height: 100vh;
+}
+
+/* ---------------NAVEGAÇÃO---------------*/
+
+nav {
+    flex: none;
+    height: auto;
+    left: 50%;
+    position: fixed;
+    top: 30px;
+    transform: translate(-50%);
+    width: auto;
+    z-index: 9;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 48px;
+    justify-content: space-between;
+    overflow: visible;
+    padding: 0 20px;
+    position: relative;
+    width: 250px;
+    background-color: var(--cinza);
+    border-radius: var(--bordas);
+}
+
+nav ul li a{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--azul);
 }
 
 /* ---------------TELA INICIAL---------------*/
@@ -61,9 +103,12 @@ main {
     padding: 2px 20px 2px 20px;
 }
 
+.card-me button a {
+    text-decoration: none;
+}
+
 .card-me button:hover{
     cursor: pointer;
-    background-color: var(--branco);
     color: black;
 }
 
@@ -82,7 +127,7 @@ main {
 
 #projetos {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,6 +139,7 @@ main {
     color: var(--branco);
     text-align: left;
     width: 43%;
+    margin-bottom: 20px;
 }
 
 .texto-pj h1 {
@@ -135,15 +181,16 @@ main {
     font-size: 15px;
 }
 
-.info-card-pj #nome-projeto{
-    font-size: 20px;
-    color: var(--azul);
+#nome-projeto{
+    color: var(--branco);
+    font-weight: 600;
 }
+
 /* ---------------TELA DE TECNOLOGIAS---------------*/
 
 #skills {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,8 +198,55 @@ main {
     gap: 30px;
 }
 
+.card-skills{
+    color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 
+#skills .texto-pj{
+    width: 40em;
+    margin-bottom: 20px;
+}
 
+.info-skills {
+    background-color: var(--cinza);
+    width: 9.5em;
+    height: 2.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: background 0.5s ease-in-out;
+}
+
+.info-skills i {
+    font-size: 35px;
+    background: var(--branco);
+    border-radius: 10px;
+    width: 45px;
+    height: 35px;
+    text-align: center;
+    padding: 5px;
+    color: var(--azul);
+}
+
+.text-skills{
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-skills p {
+    font-size: 15px;
+}
+
+.info-skills:hover{
+    background-color: var(--azul);
+}
 /* ---------------TELA DUVIDAS---------------*/
 
 #duvidas {
@@ -166,6 +260,7 @@ main {
 
 .left {
     color: var(--branco);
+    width: 30%;
 }
 
 .left .texto-pj {
@@ -215,6 +310,7 @@ main {
     padding: 10px 10px 20px;
 }
 
+
 .faq input[type=radio]:checked + label::before {
     content: '-';
 }
@@ -224,7 +320,63 @@ main {
 }
 
 .right {
-    background-color: gray;
+    color: var(--branco);
+    width: 30%;
+}
+
+.right h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    text-align: right;
+}
+
+.formulario {
+    background-color: var(--cinza);
+    border-radius: var(--bordas);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input, textarea {
+    border-radius: var(--bordas);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.formulario label {
+    font-size: 15px;
+}
+
+.formulario input, textarea::placeholder{
+    font-size: 15px;
+}
+
+#envio {
+    background-color: var(--azul);
+    font-size: 15px;
+    height: 40px;
+    border: none;
+    border-radius: var(--bordas);
+    cursor: pointer;
+}
+
+span {
+    color: var(--azul);
+    margin-left: 5px;
 }
 
 /* ---------------FOOTER---------------*/
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3 {
+    text-align: center;
+    font: normal 15px 'poppins';
+}
