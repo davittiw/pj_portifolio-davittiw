@@ -155,4 +155,76 @@ main {
 
 /* ---------------TELA DUVIDAS---------------*/
 
+#duvidas {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.left {
+    color: var(--branco);
+}
+
+.left .texto-pj {
+    margin-bottom: 30px;
+}
+
+.faq{
+    list-style: none;
+}
+
+.faq li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.faq li label {
+    padding: 15px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--cinza);
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.faq li label::before {
+    content: '+';
+    margin-right: 10px;
+}
+
+.faq input[type=radio] {
+    display: none;
+}
+
+.faq .resposta {
+    padding: 0px 14px;
+    background-color: var(--cinza);
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+    transition: max-height .5s, padding .5s;
+}
+
+.faq input[type=radio]:checked + label + .resposta{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.faq input[type=radio]:checked + label::before {
+    content: '-';
+}
+
+.resposta p {
+    font-size: 15px;
+}
+
+.right {
+    background-color: gray;
+}
+
 /* ---------------FOOTER---------------*/
