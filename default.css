@@ -1,0 +1,10 @@
+:root {
+    /*Cores*/
+    --azul: #4579C8;
+    --cinza: #1C1C1D;
+    --cinza-fundo: #141314;
+    --branco: #fff;
+
+    /*Tamanhos*/
+    --bordas: 10px;
+}

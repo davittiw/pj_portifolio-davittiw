@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    font: normal 20pt 'Poppins';
+}
+
+body {
+    background-color: #141314;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* ---------------TELA INICIAL---------------*/
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card-me {
+    width: 300px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1C1C1D;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card-me i{
+    font-size: 35px;
+}
+
+.card-me i:hover {
+    color: var(--azul);
+}
+
+.card-me h3 {
+    font-size: 18px;
+}
+.card-me h2{
+    font-weight: 600;
+}
+
+.card-me button {
+    background-color: var(--azul);
+    border: none;
+    height: 40px;
+    border-radius: var(--bordas);
+    font-size: 15px;
+    padding: 2px 20px 2px 20px;
+}
+
+.card-me button:hover{
+    cursor: pointer;
+    background-color: var(--branco);
+    color: black;
+}
+
+.card-me h2, h3, a, button {
+    color: var(--branco);
+    background-color: none;
+}
+
+.card-me img{ 
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+/* ---------------TELA DE PROJETOS---------------*/
+
+#projetos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.texto-pj {
+    color: var(--branco);
+    text-align: left;
+    width: 43%;
+}
+
+.texto-pj h1 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.texto-pj span {
+    color: var(--azul);
+}
+
+.pj-lista{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-projeto {
+    width: 300px;
+    height: 250px;
+    background-color: var(--cinza);
+    margin-left: 10px;
+    border-radius: 10px;
+    color: var(--branco);
+}
+
+.imagem-card-pj {
+    background-color: var(--azul);
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.info-card-pj {
+    padding: 10px;
+}
+
+.info-card-pj p {
+    font-size: 15px;
+}
+
+.info-card-pj #nome-projeto{
+    font-size: 20px;
+    color: var(--azul);
+}
+/* ---------------TELA DE TECNOLOGIAS---------------*/
+
+#skills {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+/* ---------------TELA DUVIDAS---------------*/
+
+/* ---------------FOOTER---------------*/
