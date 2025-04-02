@@ -2,7 +2,6 @@
 
 * {
     font: normal 20pt 'Poppins';
-    box-sizing: border-box;
 }
 
 body {
@@ -379,4 +378,18 @@ footer {
 footer h3 {
     text-align: center;
     font: normal 15px 'poppins';
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 2s;
 }
