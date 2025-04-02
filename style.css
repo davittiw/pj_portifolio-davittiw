@@ -2,7 +2,6 @@
 
 * {
     font: normal 20pt 'Poppins';
-    box-sizing: border-box;
 }
 
 body {
@@ -103,13 +102,16 @@ nav ul li a:hover {
     padding: 2px 20px 2px 20px;
 }
 
+.card-me button:hover {
+    background-color: var(--branco);
+}
+
 .card-me button a {
     text-decoration: none;
 }
 
-.card-me button:hover{
-    cursor: pointer;
-    color: black;
+.card-me button:hover a {
+   color: #000;
 }
 
 .card-me h2, h3, a, button {
@@ -379,4 +381,18 @@ footer {
 footer h3 {
     text-align: center;
     font: normal 15px 'poppins';
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 2s;
 }
