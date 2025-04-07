@@ -4,9 +4,8 @@
     font: normal 20pt 'Poppins';
 }
 
-body::-webkit-scrollbar {
+body {
     background-color: #141314;
-    display: none;
 }
 
 ::-webkit-scrollbar {
