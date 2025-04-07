@@ -53,26 +53,27 @@
             <!--Card de apresentação do projeto-->
             <div class="card-projeto hidden">
               <div class="imagem-card-pj">
-
+                <a href="https://projeto-conversor-bases.vercel.app/"><img src="midias/conversor-de-base.png" alt="imagem de um projeto de conversor de"></a>
               </div>
               <div class="info-card-pj">
-                <p id="nome-projeto">Nome do projeto 1</p>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p id="nome-projeto">Conversor de bases</p>
+                <p>Converte bases numéricas</p>
               </div>
             </div>
 
             <!--Card de apresentação do projeto-->
             <div class="card-projeto hidden">
               <div class="imagem-card-pj">
-
+                <a href="https://davittiw.github.io/projeto-geradorSenhas/"><img src="midias/gerador-de-senha.png" alt=""></a>
               </div>
               <div class="info-card-pj">
-                <p id="nome-projeto">Nome do projeto 2</p>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p id="nome-projeto">Gerador de senha</p>
+                <p>Gera senhas automaticamente</p>
               </div>
             </div>
 
             <!--Card de apresentação do projeto-->
+            <!--
             <div class="card-projeto hidden">
               <div class="imagem-card-pj">
 
@@ -82,7 +83,7 @@
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
-
+            -->
           </div>
         </section>
 
@@ -262,6 +263,7 @@
                   <input type="radio" name="acordeon" id="quarto">
                   <label for="quarto">Qual sua formação?</label>
                   
+                  
                   <div class="resposta">
                     <p>Sou um técnico formado em Desenvolvimento de Sistemas pela ETEC e atualmente estou cursando um ensino superior na FATEC em Análise e Desenvolvimento de Sistemas.</p>
                   </div>
@@ -276,19 +278,16 @@
             <h2>Entre em <span>contato</span>!</h2>
 
             <div class="formulario">
-              <form action="" method="post"></form>
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" placeholder="seu nome">
+              <form target="_blank" action="https://formsubmit.co/lucctyte@gmail.com" method="POST">
+                  <input type="text" name="name" class="form-control" placeholder="seu nome" required>
 
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                  <input type="email" name="email" class="form-control" placeholder="seuemail@email.com" required>
 
-                <label for="msg">Mensagem: </label>
-                <textarea name="msg" id="msg" placeholder="Sua mensagem"></textarea>
+                  <textarea placeholder="sua mensagem" class="form-control" name="message" rows="2" required></textarea>
 
-                <button id="envio" type="submit">Enviar</button>
+                <button type="submit" id="envio" class="btn btn-lg btn-dark btn-block">Enviar</button>
+              </form>
             </div>
-          </div>
 
         </section>
     </main>
