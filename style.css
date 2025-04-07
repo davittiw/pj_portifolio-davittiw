@@ -4,8 +4,9 @@
     font: normal 20pt 'Poppins';
 }
 
-body {
+body::-webkit-scrollbar {
     background-color: #141314;
+    display: none;
 }
 
 ::-webkit-scrollbar {
@@ -60,7 +61,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    min-width: 100%;
     min-height: 100vh;
 }
 
@@ -128,7 +129,7 @@ nav ul li a:hover {
 /* ---------------TELA DE PROJETOS---------------*/
 
 #projetos {
-    width: 100%;
+    min-width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -257,6 +258,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     gap: 30px;
 }
 
@@ -323,6 +325,8 @@ nav ul li a:hover {
 .right {
     color: var(--branco);
     width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 .right h2 {

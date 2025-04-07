@@ -1,0 +1,122 @@
+@media screen and (max-width: 625px)  {
+    .card-me {
+        width: 250px;
+    }
+
+    .card-me h3 {
+        font-size: 15px;
+    }
+    
+    .pj-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #projetos {
+        min-height: 100vh;
+    }
+
+    .texto-pj {
+        width: 70%;
+    }
+
+    .texto-pj h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    #skills {
+        min-height: 100vh;
+    }
+
+    .card-skills {
+        flex-direction: column;
+    }
+    
+    #skills .texto-pj{
+        width: 70%;
+    }
+    
+    .info-skills{
+        width: 12em;
+        align-items: left;
+        justify-content: left;
+        padding-left: 10px;
+    }
+
+    #duvidas {
+        flex-direction: column;
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .left{
+        width: 80%;
+    }
+
+    .faq li label {
+        font-size: 15px;
+    }
+
+    .resposta p {
+        font-size: 12px;
+    }
+
+    .right {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario {
+        width: 80%;
+    }
+
+    .right h2{
+        line-height: 40px;
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .formulario input, textarea {
+        width: 92%;
+    }
+
+    #skills, #duvidas {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 625px) and (max-width: 1400px) {
+    .pj-lista {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #skills {
+        min-height: 100vh;
+    }
+
+    #skills .texto-pj {
+        width: 60%;
+    }
+
+    #duvidas {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    .right h2{
+        text-align: left;
+    }
+}
